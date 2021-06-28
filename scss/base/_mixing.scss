@@ -1,0 +1,21 @@
+
+@mixin h ($w, $m, $fs, $txt-al){
+    width: $w;
+    margin: $m;
+    font-size: $fs;
+    text-align: $txt-al;
+}
+@mixin a ($txt-de, $pad, $color, $ff, $fw, $ls){
+    text-decoration: $txt-de;
+    padding: $pad;
+    color: $color;
+    font-family: $ff;
+    font-weight: $fw;
+    letter-spacing: $ls;
+}
+@mixin flexbox ($display, $j-content) {
+    display: $display;
+    justify-content: $j-content;
+}
+
+

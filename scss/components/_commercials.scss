@@ -1,0 +1,51 @@
+/*Musimundo*/
+.musimundo{
+    background-image: url('/Fotos/1A-1A-Commercials/1Musimundo@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    
+    &:after{
+        @extend %bg-after;
+    }
+    h2{
+        @extend %h2-container;
+    }
+    button{
+        align-self: flex-end;
+    }
+}
+
+.kelme{
+    background-image: url('/Fotos/1A-1A-Commercials/2Kelme@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    
+    &:after{
+        @extend %bg-after;
+    }
+    h2{
+        @extend %h2-container;
+    }
+    button{
+        align-self: flex-end;
+    }
+}
+
+.zoovet{
+    background-image: url('/Fotos/1A-1A-Commercials/3Zoovet@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    
+    &:after{
+        @extend %bg-after;
+    }
+    h2{
+        @extend %h2-container;
+    }
+    button{
+        align-self: flex-end;
+    }
+}

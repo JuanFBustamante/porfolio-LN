@@ -1,0 +1,59 @@
+/*Bebiendo pa no sufrir*/
+.bebiendo{
+    background-image: url('/Fotos/1A-1B-Music/1Bebiendo-pa-no-sufrir_1@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+
+    &:after{
+        @extend %bg-after;
+    }
+
+    h2{
+        @extend %h2-container;
+    }
+
+    button{
+        align-self: flex-end;
+    }
+}
+
+
+/*AHPF*/
+.ahpf{
+    background-image: url('/Fotos/1A-1B-Music/2AHPF@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    
+    &:after{
+        @extend %bg-after;
+    }
+
+    h2{
+        @extend %h2-container;
+    }
+    button{
+        align-self: flex-end;
+    }
+}
+
+/*Ven pa ka*/
+.ven-pa-ka{
+    background-image: url('/Fotos/1A-1B-Music/3Ven-pa-ka@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+
+    &:after{
+        @extend %bg-after;
+    }
+
+    h2{
+        @extend %h2-container;
+    }
+
+    button{
+        align-self: flex-end;
+    }
+}

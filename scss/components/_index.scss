@@ -1,0 +1,66 @@
+.about{
+    background-image: url('/Fotos/1-Home/2-AboutMe.jpg');
+    @extend %background;
+    background-attachment: fixed;
+    @include flexbox (flex, center);
+
+    h2{
+        width: 35%;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+}
+.contact {
+    background-color: #000000;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    // position: relative;
+    h2{
+        @extend %h2-container;
+     }
+}
+
+.footer {
+    width: 100%;
+    height: 12.3vh;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    p{
+        color: #5e5c5c;
+        font-family: 'Cormorant', sans-serif;
+        font-size: 15px;
+        font-weight: lighter;
+        margin: 0;
+        padding-left: 2rem;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+}
+
+.footer-icons{
+    margin: 0;
+    padding-right: 2rem;
+    
+    a{
+        svg {
+            margin: 0 auto;
+            padding-left: .8rem;
+            height: 1.5rem;
+            transition: all 250ms;
+    
+            &:hover{
+                transform: scale(1.09);
+            }
+        }
+    }
+}
+
+

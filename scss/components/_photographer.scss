@@ -1,0 +1,52 @@
+/*Serie BP*/
+.serie-bp{
+    background-image: url('/Fotos/1A-2-Photographer/1Serie-Barrios-Priv@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    
+    &:after{
+        @extend %bg-after;
+    }
+
+    h2{
+        @extend %h2-container;
+     }
+    button{
+        align-self: flex-end;
+    }
+}
+/*Portraits*/
+.portraits{
+    background-image: url('/Fotos/1A-2-Photographer/2Portrait@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    
+    &:after{
+        @extend %bg-after;
+    }
+    h2{
+       @extend %h2-container;
+    }
+    button{
+        align-self: flex-end;
+    }
+}
+/*Brands*/
+.brands{
+    background-image: url('/Fotos/1A-2-Photographer/3Brand@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    
+    &:after{
+        @extend %bg-after;
+    }
+    h2{
+        @extend %h2-container;
+     }
+    button{
+        align-self: flex-end;
+    }
+}

@@ -1,0 +1,59 @@
+/*Londero*/
+.londero{
+    background-image: url('/Fotos/1A-3-Filmmaker/1Londero@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    
+    &:after{
+        @extend %bg-after;
+    }
+
+    button{
+        align-self: flex-end;
+    }
+}
+/*Enzo demartini*/
+.enzo{
+    background-image: url('/Fotos/1A-3-Filmmaker/2enzo@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    
+    &:after{
+        @extend %bg-after;
+    }
+
+    h2{
+        width: 35%;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    button{
+        align-self: flex-end;
+    }
+}
+/*Cayo Amarillo*/
+.cayo-amarillo{
+    background-image: url('/Fotos/1A-3-Filmmaker/3Cayo¦ü@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    
+    &:after{
+        @extend %bg-after;
+    }
+
+    h2{
+        width: 35%;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    button{
+        align-self: flex-end;
+    }
+}

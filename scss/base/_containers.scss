@@ -1,0 +1,16 @@
+@import '../base/mixing';
+@import '../base/extends';
+
+.header-container{
+    width: 100%;
+    margin: 0 auto;
+    @include flexbox(flex, center);
+    align-items: center;
+    position: relative;
+}
+
+.section-container{
+    width: auto;
+    height: 90vh;
+}
+

@@ -1,0 +1,51 @@
+@import '../base/mixing';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cormorant', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: default;
+}
+
+h1{
+    @include h(auto, 0 auto, 2.5rem, center);
+    @include flexbox(flex, center);
+    align-self: center;
+    position: absolute;
+    z-index: 2;
+    a{
+        @include a(none, .8rem, #ffffff, 'Cormorant', normal, 0);
+        
+        &:before, &:after{
+            content: '';
+            transition: all 250ms;
+        }
+    }
+}
+
+h2{
+    @include h(auto, 0 auto, 2.5rem, center);
+    @include flexbox(flex, center);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    a{
+        @include a(none, .8rem, #ffffff, 'Cormorant', normal, 0);
+    }
+}
+
+.btn-section{
+    // position: absolute;
+    transition: all 250ms;
+    &:hover{
+        transform: scale(1.03);
+        color: rgb(228, 226, 226);
+        cursor: pointer;
+    }
+}

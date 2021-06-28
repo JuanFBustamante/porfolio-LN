@@ -1,0 +1,40 @@
+.director{
+    background-image: url('/Fotos/1A-Portfolio/1-Director.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    h2{
+        @extend %h2-container;
+     }
+    &:after{
+        @extend %bg-after;
+    }
+}
+
+
+.photographer{
+    background-image: url('/Fotos/1A-Portfolio/2-Photographer.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    h2{
+        @extend %h2-container;
+     }
+    &:after{
+        @extend %bg-after;
+    }
+}
+
+
+.filmmaker{
+    background-image: url('/Fotos/1A-Portfolio/3-Filmmaker.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    h2{
+        @extend %h2-container;
+     }
+    &:after{
+        @extend %bg-after;
+    }
+}

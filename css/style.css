@@ -1,0 +1,623 @@
+@charset "UTF-8";
+/*Style Imports*/
+/*Base*/
+/*Globals*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cormorant", sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  cursor: default;
+}
+
+h1 {
+  width: auto;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  z-index: 2;
+}
+h1 a {
+  text-decoration: none;
+  padding: 0.8rem;
+  color: #ffffff;
+  font-family: "Cormorant";
+  font-weight: normal;
+  letter-spacing: 0;
+}
+h1 a:before, h1 a:after {
+  content: "";
+  transition: all 250ms;
+}
+
+h2 {
+  width: auto;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+h2 a {
+  text-decoration: none;
+  padding: 0.8rem;
+  color: #ffffff;
+  font-family: "Cormorant";
+  font-weight: normal;
+  letter-spacing: 0;
+}
+
+.btn-section {
+  transition: all 250ms;
+}
+.btn-section:hover {
+  transform: scale(1.03);
+  color: #e4e2e2;
+  cursor: pointer;
+}
+
+/*Containers*/
+.cayo-amarillo, .enzo, .londero, .brands, .portraits, .serie-bp, .packaging, .branding, .ven-pa-ka, .ahpf, .bebiendo, .zoovet, .kelme, .musimundo, .music, .commercials, .filmmaker, .photographer, .director, .about {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cayo-amarillo:after, .enzo:after, .londero:after, .brands:after, .portraits:after, .serie-bp:after, .packaging:after, .branding:after, .ven-pa-ka:after, .ahpf:after, .bebiendo:after, .zoovet:after, .kelme:after, .musimundo:after, .music:after, .commercials:after, .filmmaker:after, .photographer:after, .director:after {
+  content: " ";
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.brands h2, .portraits h2, .serie-bp h2, .more h2, .packaging h2, .branding h2, .ven-pa-ka h2, .ahpf h2, .bebiendo h2, .zoovet h2, .kelme h2, .musimundo h2, .creative h2, .music h2, .commercials h2, .filmmaker h2, .photographer h2, .director h2, .contact h2 {
+  width: 35%;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.section-container {
+  width: auto;
+  height: 90vh;
+}
+
+/*mixing*/
+/*maplist*/
+/*extends*/
+.cayo-amarillo, .enzo, .londero, .brands, .portraits, .serie-bp, .packaging, .branding, .ven-pa-ka, .ahpf, .bebiendo, .zoovet, .kelme, .musimundo, .music, .commercials, .filmmaker, .photographer, .director, .about {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cayo-amarillo:after, .enzo:after, .londero:after, .brands:after, .portraits:after, .serie-bp:after, .packaging:after, .branding:after, .ven-pa-ka:after, .ahpf:after, .bebiendo:after, .zoovet:after, .kelme:after, .musimundo:after, .music:after, .commercials:after, .filmmaker:after, .photographer:after, .director:after {
+  content: " ";
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.brands h2, .portraits h2, .serie-bp h2, .more h2, .packaging h2, .branding h2, .ven-pa-ka h2, .ahpf h2, .bebiendo h2, .zoovet h2, .kelme h2, .musimundo h2, .creative h2, .music h2, .commercials h2, .filmmaker h2, .photographer h2, .director h2, .contact h2 {
+  width: 35%;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+/*Components*/
+/*nav*/
+.nav-logo {
+  position: fixed;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: flex-start;
+  padding: 2.5rem 0 0 2.5rem;
+  z-index: 2;
+}
+
+.nav-logo a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 1rem;
+}
+
+.btn-nav {
+  transition: all 250ms;
+}
+.btn-nav:before, .btn-navafter {
+  transition: all 250ms;
+}
+.btn-nav:hover {
+  color: #e4e2e2;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.02);
+}
+
+/*index*/
+.about {
+  background-image: url("/Fotos/1-Home/2-AboutMe.jpg");
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+}
+.about h2 {
+  width: 35%;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.contact {
+  background-color: #000000;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  width: 100%;
+  height: 12.3vh;
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.footer p {
+  color: #5e5c5c;
+  font-family: "Cormorant", sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  margin: 0;
+  padding-left: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.footer-icons {
+  margin: 0;
+  padding-right: 2rem;
+}
+.footer-icons a svg {
+  margin: 0 auto;
+  padding-left: 0.8rem;
+  height: 1.5rem;
+  transition: all 250ms;
+}
+.footer-icons a svg:hover {
+  transform: scale(1.09);
+}
+
+/*about*/
+.about-page-container {
+  /* font-family: 'Cormorant-Light'; */
+  width: 100%;
+  height: 90vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.about-text-container {
+  /* font-family: 'Cormorant-Light'; */
+  width: 65%;
+  margin: 0 auto;
+}
+
+.about-text {
+  color: #e0dfdf;
+  font-family: "Cormorant", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  word-spacing: 1px;
+  text-align: justify;
+}
+
+/*contact*/
+/*portfolio*/
+.director {
+  background-image: url("/Fotos/1A-Portfolio/1-Director.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.photographer {
+  background-image: url("/Fotos/1A-Portfolio/2-Photographer.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.filmmaker {
+  background-image: url("/Fotos/1A-Portfolio/3-Filmmaker.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+/*director*/
+.commercials {
+  background-image: url("/Fotos/1A-1-Director/1Commercial@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.music {
+  background-image: url("/Fotos/1A-1-Director/2Music@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.creative {
+  background-color: #000000;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+/*director-commercials*/
+/*Musimundo*/
+.musimundo {
+  background-image: url("/Fotos/1A-1A-Commercials/1Musimundo@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.musimundo button {
+  align-self: flex-end;
+}
+
+.kelme {
+  background-image: url("/Fotos/1A-1A-Commercials/2Kelme@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.kelme button {
+  align-self: flex-end;
+}
+
+.zoovet {
+  background-image: url("/Fotos/1A-1A-Commercials/3Zoovet@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.zoovet button {
+  align-self: flex-end;
+}
+
+/*director-music*/
+/*Bebiendo pa no sufrir*/
+.bebiendo {
+  background-image: url("/Fotos/1A-1B-Music/1Bebiendo-pa-no-sufrir_1@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.bebiendo button {
+  align-self: flex-end;
+}
+
+/*AHPF*/
+.ahpf {
+  background-image: url("/Fotos/1A-1B-Music/2AHPF@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.ahpf button {
+  align-self: flex-end;
+}
+
+/*Ven pa ka*/
+.ven-pa-ka {
+  background-image: url("/Fotos/1A-1B-Music/3Ven-pa-ka@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.ven-pa-ka button {
+  align-self: flex-end;
+}
+
+/*director-creative*/
+/*Branding*/
+.branding {
+  background-image: url("/Fotos/1A-1C-Creative/1Branding@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.branding button {
+  align-self: flex-end;
+}
+
+/*Packaging*/
+.packaging {
+  background-image: url("/Fotos/1A-1C-Creative/2Packaging@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.packaging button {
+  align-self: flex-end;
+}
+
+/*More*/
+.more {
+  background-color: #000000;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.more button {
+  align-self: flex-end;
+}
+
+/*Photographer*/
+/*Serie BP*/
+.serie-bp {
+  background-image: url("/Fotos/1A-2-Photographer/1Serie-Barrios-Priv@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.serie-bp button {
+  align-self: flex-end;
+}
+
+/*Portraits*/
+.portraits {
+  background-image: url("/Fotos/1A-2-Photographer/2Portrait@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.portraits button {
+  align-self: flex-end;
+}
+
+/*Brands*/
+.brands {
+  background-image: url("/Fotos/1A-2-Photographer/3Brand@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.brands button {
+  align-self: flex-end;
+}
+
+/*Filmmaker/editor*/
+/*Londero*/
+.londero {
+  background-image: url("/Fotos/1A-3-Filmmaker/1Londero@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.londero button {
+  align-self: flex-end;
+}
+
+/*Enzo demartini*/
+.enzo {
+  background-image: url("/Fotos/1A-3-Filmmaker/2enzo@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.enzo h2 {
+  width: 35%;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.enzo button {
+  align-self: flex-end;
+}
+
+/*Cayo Amarillo*/
+.cayo-amarillo {
+  background-image: url("/Fotos/1A-3-Filmmaker/3Cayo¦ü@300x-100.jpg");
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.cayo-amarillo h2 {
+  width: 35%;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.cayo-amarillo button {
+  align-self: flex-end;
+}
+
+/*Button*/
+/*Button watch*/
+/*button button--antiman button--round-l button--text-medium*/
+.button {
+  width: 0.2rem;
+  height: 0.2rem;
+  /* border-top: 2px solid black; */
+  position: absolute;
+  cursor: pointer;
+  /* display: flex;
+     flex-direction: column;
+     justify-content: center; */
+  align-items: center;
+  /* width: auto; */
+  font-family: "Cormorant", sans-serif;
+  min-width: 4.5rem;
+  max-width: 10rem;
+  display: block;
+  margin: 1.4rem;
+  padding-bottom: 0.9rem;
+  border: none;
+  background: none;
+  color: #c3ccd1;
+  /* vertical-align: middle; */
+  /* position: relative; */
+  z-index: 1;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.button:focus {
+  outline: none;
+}
+.button > span {
+  vertical-align: middle;
+}
+
+/**/
+.button--round-s {
+  border-radius: 1.4rem;
+}
+
+.button--text-upper {
+  letter-spacing: 0px;
+  /* text-transform: uppercase; */
+}
+
+.button--text-thick {
+  font-family: "Cormorant", sans-serif;
+  font-weight: 400;
+}
+
+.button--border-thick {
+  border: 1px solid;
+}
+
+.button--antiman {
+  background: none;
+  border: none;
+  height: 2.5rem;
+}
+
+.button--antiman.button--inverted,
+.button--antiman.button--inverted-alt {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+/* .button--antiman > span {
+	padding-left: 0.35em;
+} */
+.button--antiman::before,
+.button--antiman::after {
+  content: "";
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.button--antiman::before {
+  border: 1px solid #c3ccd1;
+  opacity: 0;
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+  transform: scale3d(1.2, 1.2, 1);
+}
+
+.button--antiman.button--border-thin::before {
+  border-width: 1px;
+}
+
+.button--antiman.button--border-medium::before {
+  border-width: 1px;
+}
+
+.button--antiman.button--border-thick::before {
+  border-width: 1px;
+}
+
+.button--antiman.button--inverted::before {
+  border-color: #c3ccd1;
+}
+
+.button--antiman.button--inverted-alt::before {
+  border-color: #c3ccd1;
+}
+
+.button--antiman::after {
+  background: #fff;
+}
+
+.button--antiman.button--inverted::after {
+  background: #c3ccd1;
+}
+
+.button--antiman.button--inverted-alt::after {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.button--antiman.button--inverted:hover {
+  color: #c3ccd1;
+}
+
+.button--antiman.button--inverted-alt:hover {
+  color: #c3ccd1;
+}
+
+.button--antiman:hover::before {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.button--antiman:hover::after {
+  opacity: 0;
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+}
+
+/*# sourceMappingURL=style.css.map */

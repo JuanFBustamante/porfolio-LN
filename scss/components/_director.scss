@@ -1,0 +1,35 @@
+.commercials{
+    background-image: url('/Fotos/1A-1-Director/1Commercial@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    h2{
+        @extend %h2-container;
+    }
+    &:after{
+        @extend %bg-after;
+    }
+}
+
+.music{
+    background-image: url('/Fotos/1A-1-Director/2Music@300x-100.jpg');
+    @extend %background;
+    @include flexbox (flex, center);
+    position: relative;
+    h2{
+        @extend %h2-container;
+    }
+    &:after{
+        @extend %bg-after;
+    }
+}
+
+.creative{
+    background-color: #000000;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    h2{
+        @extend %h2-container;
+    }
+}
