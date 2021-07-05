@@ -623,6 +623,7 @@ h2 a {
 .gallery-wrapper {
   position: relative;
   z-index: 1;
+  display: none;
 }
 .gallery-wrapper .content {
   position: relative;
